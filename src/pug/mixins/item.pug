@@ -1,0 +1,21 @@
+mixin item(obj)
+	article.item
+		+picture('item', `${obj.nameImg}`)
+		.item__info
+			.rating
+				if obj.rating == 5
+					- for (let i = 0; i < obj.rating; i++)
+						+picture('star', 'star-full')
+				else
+					- for (let i = 0; i < obj.rating; i++)
+						+picture('star', 'star-full')
+					- for (let i = 0; i < (5 - obj.rating); i++)
+						+picture('star', 'star-empty')
+			h3.item__title!= obj.title
+			.item__price
+				span.item__count!= obj.price
+				span.item__curr
+					| грн
+		if obj.status
+			span.item__status(class=`item__status--${obj.status.item}`)!= obj.status.name
+		a.item__link(href="#")

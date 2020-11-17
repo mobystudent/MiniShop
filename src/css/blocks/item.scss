@@ -1,0 +1,87 @@
+.item {
+	position: relative;
+	width: 270px;
+	background: $white;
+	border: 1px solid transparent;
+	box-shadow: 0 1px 6px 1px rgba($black, 0.09);
+	margin-right: 30px;
+	transition: box-shadow 0.25s ease-in-out, border-color 0.25s ease-in-out;
+	border-radius: 10px;
+	overflow: hidden;
+
+	&:hover {
+		box-shadow: 0 5px 12px 4px rgba($darkTurquoise, 0.36);
+
+		.item__title {
+			color: $darkTurquoise;
+		}
+	}
+
+	&__title {
+		position: relative;
+		font: 15px/30px $openSans;
+		font-weight: 400;
+		letter-spacing: -0.01em;
+		color: $dimBlack;
+		padding-bottom: 15px;
+		margin-bottom: 10px;
+		transition: color 0.25s ease-in-out;
+
+		&:before {
+			content: '';
+			position: absolute;
+			left: 50%;
+			bottom: 0;
+			width: 80px;
+			height: 1px;
+			background: $lightGray;
+			transform: translateX(-50%);
+		}
+	}
+
+	&__info {
+		padding: 20px 0 15px;
+		text-align: center;
+	}
+
+	&__price {
+		font: 15px/30px $openSans;
+		font-weight: 700;
+		letter-spacing: -0.01em;
+		color: $dimBlack;
+	}
+
+	&__count {
+		margin-right: 5px;
+	}
+
+	&__status {
+		position: absolute;
+		top: 10px;
+		left: 10px;
+		font: 11px $openSans;
+		font-weight: 600;
+		letter-spacing: -0.01em;
+		padding: 7px;
+		border-radius: 5px;
+		text-transform: uppercase;
+		color: $white;
+
+		&--new {
+			background: $darkTurquoise;
+		}
+
+		&--hit {
+			background: $orange;
+		}
+	}
+
+	&__link {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		cursor: pointer;
+	}
+}

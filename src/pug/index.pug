@@ -9,5 +9,23 @@ block content
 		include includes/header
 		
 		main.main
+			.container
+				h1.main__title
+					| Одежда для девочек
+				.main__body
+					aside.main__filters
+						
+					.content
+						section.section.section--items
+							+item({nameImg: 'item-1', rating: '5', title: 'Свитер в полоску', price: '123', status: { item: 'new', name: 'новинка'}})
+							+item({nameImg: 'item-2', rating: '4', title: 'Платье с цветочным принтом', price: '123', status: { item: 'hit', name: 'хит продаж'}})
+							+item({nameImg: 'item-3', rating: '4', title: 'Джинсовый комбинезон', price: '123'})
+						section.section.section--might-fit
+							h2.section__title
+								| Похожие товары
+							.slider
+								+item({nameImg: 'item-1', rating: '5', title: 'Свитер в полоску', price: '123', status: { item: 'new', name: 'новинка'}})
+								+item({nameImg: 'item-2', rating: '5', title: 'Платье с цветочным принтом', price: '123', status: { item: 'hit', name: 'хит продаж'}})
+								+item({nameImg: 'item-3', rating: '4', title: 'Джинсовый комбинезон', price: '123'})
 			
 		include includes/footer

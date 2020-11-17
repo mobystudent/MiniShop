@@ -1,0 +1,26 @@
+.main {
+	flex: 1 0 auto;
+	position: relative;
+	z-index: 0;
+	overflow: hidden;
+	padding: 40px 0;
+
+	&__title {
+		font: 30px/46px $comfortaa;
+		letter-spacing: -0.05em;
+		color: $dimBlack;
+		margin-bottom: 35px;
+	}
+
+	&__filters {
+		background: $white;
+		width: 270px;
+		border: 1px solid $lightGray;
+		margin-right: 30px;
+	}
+
+	&__body {
+		display: flex;
+		margin-right: -30px;
+	}
+}

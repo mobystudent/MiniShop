@@ -1,3 +1,15 @@
 .section {
-	
+	&--items {
+		display: flex;
+		margin-bottom: 35px;
+	}
+
+	&__title {
+		font: 16px/30px $openSans;
+		font-weight: 400;
+		text-transform: uppercase;
+		letter-spacing: -0.01em;
+		color: $dimBlack;
+		margin-bottom: 15px;
+	}
 }
