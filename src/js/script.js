@@ -1,5 +1,6 @@
 import $ from 'jquery';
 import slick from 'slick-carousel';
+import scrollbar from 'smooth-scrollbar';
 
 $(window).on('load', () => {
 	showFilter();
@@ -9,6 +10,8 @@ $(window).on('load', () => {
 function showFilter() {
 	$('.filter__field--block').click(function(){
 		$(this).toggleClass('filter__field--active').next().slideToggle();
+
+		scrollResize();
 	});
 
 	$('.filter__header--select').click(function(){
@@ -23,6 +26,8 @@ function showFilter() {
 		else {
 			$(this).removeClass('filter__header--active').next().slideUp();
 		}
+
+		scrollResize();
 	});
 }
 
@@ -54,5 +59,27 @@ function slider() {
 				}
 			}
 		]
+	});
+}
+
+function customScrollbar() {
+	if(window.innerWidth >= 1024) {
+		$('.filter__list').map((i, item) => {
+			scrollbar.init(item, {
+				alwaysShowTracks: true
+			});
+		});
+	} else {
+		$('.filter__list').map((i, item) => {
+			scrollbar.destroy();
+		});
+	}
+}
+
+function scrollResize() {
+	customScrollbar();
+
+	window.resize(() => {
+		customScrollbar();
 	});
 }
