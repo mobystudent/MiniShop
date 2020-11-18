@@ -1,3 +1,68 @@
 .slider {
-	display: flex;
+	position: relative;
+	width: 100%;
+
+	.slick-list {
+		width: 100%;
+		overflow: hidden;
+		height: 100%;
+
+		@media screen and (max-width: 767px) {
+			width: 280px;
+		}
+	}
+
+	.slick-track,
+	.slick-slide > div {
+		height: 100%;
+	}
+
+	.slick-slide {
+		width: 270px;
+
+		@media screen and (max-width: 1365px) {
+			width: 215px;
+		}
+
+		@media screen and (max-width: 1023px) {
+			width: 210px;
+		}
+
+		@media screen and (max-width: 767px) {
+			width: 270px;
+		}
+	}
+
+	&__content {
+		margin: 0 -15px 35px;
+		padding-left: 15px;
+
+		@media screen and (max-width: 1365px) {
+			margin-left: -10px;
+			margin-right: -10px;
+			padding-left: 10px;
+		}
+
+		@media screen and (max-width: 767px) {
+			margin-left: 0;
+			margin-right: 0;
+			padding-left: 0;
+		}
+	}
+
+	&__control {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		height: 40px;
+		padding-right: 20px;
+
+		@media screen and (max-width: 1365px) {
+			padding-right: 0;
+		}
+	}
+
+	&__dots {
+		margin: 0 20px;
+	}
 }

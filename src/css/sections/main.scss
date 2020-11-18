@@ -48,6 +48,7 @@
 	&__body {
 		display: flex;
 		align-items: flex-start;
+		margin-bottom: 65px;
 
 		@media screen and (max-width: 767px) {
 			flex-flow: column;
@@ -55,14 +56,14 @@
 	}
 
 	&__content {
-		margin-right: -30px;
+		width: 870px;
 
 		@media screen and (max-width: 1365px) {
-			margin-right: -20px;
+			width: 695px;
 		}
 
 		@media screen and (max-width: 1023px) {
-			width: 475px;
+			width: 460px;
 		}
 
 		@media screen and (max-width: 767px) {

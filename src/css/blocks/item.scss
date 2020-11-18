@@ -6,16 +6,30 @@
 	background: $white;
 	border: 1px solid transparent;
 	box-shadow: 0 1px 6px 1px rgba($black, 0.09);
-	margin-right: 30px;
-	margin-bottom: 30px;
 	transition: box-shadow 0.25s ease-in-out, border-color 0.25s ease-in-out;
 	border-radius: 10px;
 	overflow: hidden;
 
+	&--preview {
+		margin-right: 30px;
+		margin-bottom: 30px;
+
+		@media screen and (max-width: 1365px) {
+			margin-right: 20px;
+			margin-bottom: 20px;
+		}
+
+		@media screen and (max-width: 767px) {
+			margin: 0 auto 15px;
+		}
+	}
+
+	&--slider {
+		height: 100%;
+	}
+
 	@media screen and (max-width: 1365px) {
 		width: 215px;
-		margin-right: 20px;
-		margin-bottom: 20px;
 	}
 
 	@media screen and (max-width: 1023px) {
@@ -24,7 +38,6 @@
 
 	@media screen and (max-width: 767px) {
 		width: 270px;
-		margin: 0 auto 15px;
 	}
 
 	&:hover {

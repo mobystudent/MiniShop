@@ -1,5 +1,5 @@
 mixin item(obj)
-	article.item
+	article.item(class=`item--${obj.class}`)
 		+picture('item', `${obj.nameImg}`)
 		.item__info
 			.rating

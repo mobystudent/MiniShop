@@ -8,7 +8,6 @@
     <title>Главная</title>
     <link rel="favicon" href="favicon/favicon.ico">
     <link rel="stylesheet" href="style.min.css">
-    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.0/jquery.min.js"></script>
     <script defer src="js/script.min.js"></script>
   </head>
   <body>
@@ -113,7 +112,7 @@
             </aside>
             <div class="main__content">
               <section class="section section--items">
-                    <article class="item">
+                    <article class="item item--preview">
                           <picture class="img img--item">
                             <source class="img__item" srcset="img/item-1.webp" type="image/webp">
                             <source class="img__item" srcset="img/item-1.jp2" type="image/jp2"><img class="img__item" src="img/item-1.png" alt="item-1">
@@ -145,7 +144,7 @@
                         <div class="item__price"><span class="item__count">123</span><span class="item__curr">грн</span></div>
                       </div><span class="item__status item__status--new">новинка</span><a class="item__link" href="#"></a>
                     </article>
-                    <article class="item">
+                    <article class="item item--preview">
                           <picture class="img img--item">
                             <source class="img__item" srcset="img/item-2.webp" type="image/webp">
                             <source class="img__item" srcset="img/item-2.jp2" type="image/jp2"><img class="img__item" src="img/item-2.png" alt="item-2">
@@ -177,7 +176,7 @@
                         <div class="item__price"><span class="item__count">123</span><span class="item__curr">грн</span></div>
                       </div><span class="item__status item__status--hit">хит продаж</span><a class="item__link" href="#"></a>
                     </article>
-                    <article class="item">
+                    <article class="item item--preview">
                           <picture class="img img--item">
                             <source class="img__item" srcset="img/item-3.webp" type="image/webp">
                             <source class="img__item" srcset="img/item-3.jp2" type="image/jp2"><img class="img__item" src="img/item-3.png" alt="item-3">
@@ -213,102 +212,301 @@
               <section class="section section--might-fit">
                 <h2 class="section__title">Похожие товары</h2>
                 <div class="slider">
-                      <article class="item">
-                            <picture class="img img--item">
-                              <source class="img__item" srcset="img/item-1.webp" type="image/webp">
-                              <source class="img__item" srcset="img/item-1.jp2" type="image/jp2"><img class="img__item" src="img/item-1.png" alt="item-1">
-                            </picture>
-                        <div class="item__info">
-                          <div class="rating">
-                                <picture class="img img--star">
-                                  <source class="img__item" srcset="img/star-full.webp" type="image/webp">
-                                  <source class="img__item" srcset="img/star-full.jp2" type="image/jp2"><img class="img__item" src="img/star-full.png" alt="star-full">
-                                </picture>
-                                <picture class="img img--star">
-                                  <source class="img__item" srcset="img/star-full.webp" type="image/webp">
-                                  <source class="img__item" srcset="img/star-full.jp2" type="image/jp2"><img class="img__item" src="img/star-full.png" alt="star-full">
-                                </picture>
-                                <picture class="img img--star">
-                                  <source class="img__item" srcset="img/star-full.webp" type="image/webp">
-                                  <source class="img__item" srcset="img/star-full.jp2" type="image/jp2"><img class="img__item" src="img/star-full.png" alt="star-full">
-                                </picture>
-                                <picture class="img img--star">
-                                  <source class="img__item" srcset="img/star-full.webp" type="image/webp">
-                                  <source class="img__item" srcset="img/star-full.jp2" type="image/jp2"><img class="img__item" src="img/star-full.png" alt="star-full">
-                                </picture>
-                                <picture class="img img--star">
-                                  <source class="img__item" srcset="img/star-full.webp" type="image/webp">
-                                  <source class="img__item" srcset="img/star-full.jp2" type="image/jp2"><img class="img__item" src="img/star-full.png" alt="star-full">
-                                </picture>
-                          </div>
-                          <h3 class="item__title">Свитер в полоску</h3>
-                          <div class="item__price"><span class="item__count">123</span><span class="item__curr">грн</span></div>
-                        </div><span class="item__status item__status--new">новинка</span><a class="item__link" href="#"></a>
-                      </article>
-                      <article class="item">
-                            <picture class="img img--item">
-                              <source class="img__item" srcset="img/item-2.webp" type="image/webp">
-                              <source class="img__item" srcset="img/item-2.jp2" type="image/jp2"><img class="img__item" src="img/item-2.png" alt="item-2">
-                            </picture>
-                        <div class="item__info">
-                          <div class="rating">
-                                <picture class="img img--star">
-                                  <source class="img__item" srcset="img/star-full.webp" type="image/webp">
-                                  <source class="img__item" srcset="img/star-full.jp2" type="image/jp2"><img class="img__item" src="img/star-full.png" alt="star-full">
-                                </picture>
-                                <picture class="img img--star">
-                                  <source class="img__item" srcset="img/star-full.webp" type="image/webp">
-                                  <source class="img__item" srcset="img/star-full.jp2" type="image/jp2"><img class="img__item" src="img/star-full.png" alt="star-full">
-                                </picture>
-                                <picture class="img img--star">
-                                  <source class="img__item" srcset="img/star-full.webp" type="image/webp">
-                                  <source class="img__item" srcset="img/star-full.jp2" type="image/jp2"><img class="img__item" src="img/star-full.png" alt="star-full">
-                                </picture>
-                                <picture class="img img--star">
-                                  <source class="img__item" srcset="img/star-full.webp" type="image/webp">
-                                  <source class="img__item" srcset="img/star-full.jp2" type="image/jp2"><img class="img__item" src="img/star-full.png" alt="star-full">
-                                </picture>
-                                <picture class="img img--star">
-                                  <source class="img__item" srcset="img/star-empty.webp" type="image/webp">
-                                  <source class="img__item" srcset="img/star-empty.jp2" type="image/jp2"><img class="img__item" src="img/star-empty.png" alt="star-empty">
-                                </picture>
-                          </div>
-                          <h3 class="item__title">Платье с цветочным принтом</h3>
-                          <div class="item__price"><span class="item__count">123</span><span class="item__curr">грн</span></div>
-                        </div><span class="item__status item__status--hit">хит продаж</span><a class="item__link" href="#"></a>
-                      </article>
-                      <article class="item">
-                            <picture class="img img--item">
-                              <source class="img__item" srcset="img/item-3.webp" type="image/webp">
-                              <source class="img__item" srcset="img/item-3.jp2" type="image/jp2"><img class="img__item" src="img/item-3.png" alt="item-3">
-                            </picture>
-                        <div class="item__info">
-                          <div class="rating">
-                                <picture class="img img--star">
-                                  <source class="img__item" srcset="img/star-full.webp" type="image/webp">
-                                  <source class="img__item" srcset="img/star-full.jp2" type="image/jp2"><img class="img__item" src="img/star-full.png" alt="star-full">
-                                </picture>
-                                <picture class="img img--star">
-                                  <source class="img__item" srcset="img/star-full.webp" type="image/webp">
-                                  <source class="img__item" srcset="img/star-full.jp2" type="image/jp2"><img class="img__item" src="img/star-full.png" alt="star-full">
-                                </picture>
-                                <picture class="img img--star">
-                                  <source class="img__item" srcset="img/star-full.webp" type="image/webp">
-                                  <source class="img__item" srcset="img/star-full.jp2" type="image/jp2"><img class="img__item" src="img/star-full.png" alt="star-full">
-                                </picture>
-                                <picture class="img img--star">
-                                  <source class="img__item" srcset="img/star-full.webp" type="image/webp">
-                                  <source class="img__item" srcset="img/star-full.jp2" type="image/jp2"><img class="img__item" src="img/star-full.png" alt="star-full">
-                                </picture>
-                                <picture class="img img--star">
-                                  <source class="img__item" srcset="img/star-empty.webp" type="image/webp">
-                                  <source class="img__item" srcset="img/star-empty.jp2" type="image/jp2"><img class="img__item" src="img/star-empty.png" alt="star-empty">
-                                </picture>
-                          </div>
-                          <h3 class="item__title">Джинсовый комбинезон</h3>
-                          <div class="item__price"><span class="item__count">123</span><span class="item__curr">грн</span></div>
-                        </div><a class="item__link" href="#"></a>
-                      </article>
+                  <div class="slider__content" id="slider">
+                        <article class="item item--slider">
+                              <picture class="img img--item">
+                                <source class="img__item" srcset="img/item-1.webp" type="image/webp">
+                                <source class="img__item" srcset="img/item-1.jp2" type="image/jp2"><img class="img__item" src="img/item-1.png" alt="item-1">
+                              </picture>
+                          <div class="item__info">
+                            <div class="rating">
+                                  <picture class="img img--star">
+                                    <source class="img__item" srcset="img/star-full.webp" type="image/webp">
+                                    <source class="img__item" srcset="img/star-full.jp2" type="image/jp2"><img class="img__item" src="img/star-full.png" alt="star-full">
+                                  </picture>
+                                  <picture class="img img--star">
+                                    <source class="img__item" srcset="img/star-full.webp" type="image/webp">
+                                    <source class="img__item" srcset="img/star-full.jp2" type="image/jp2"><img class="img__item" src="img/star-full.png" alt="star-full">
+                                  </picture>
+                                  <picture class="img img--star">
+                                    <source class="img__item" srcset="img/star-full.webp" type="image/webp">
+                                    <source class="img__item" srcset="img/star-full.jp2" type="image/jp2"><img class="img__item" src="img/star-full.png" alt="star-full">
+                                  </picture>
+                                  <picture class="img img--star">
+                                    <source class="img__item" srcset="img/star-full.webp" type="image/webp">
+                                    <source class="img__item" srcset="img/star-full.jp2" type="image/jp2"><img class="img__item" src="img/star-full.png" alt="star-full">
+                                  </picture>
+                                  <picture class="img img--star">
+                                    <source class="img__item" srcset="img/star-full.webp" type="image/webp">
+                                    <source class="img__item" srcset="img/star-full.jp2" type="image/jp2"><img class="img__item" src="img/star-full.png" alt="star-full">
+                                  </picture>
+                            </div>
+                            <h3 class="item__title">Свитер в полоску</h3>
+                            <div class="item__price"><span class="item__count">123</span><span class="item__curr">грн</span></div>
+                          </div><span class="item__status item__status--new">новинка</span><a class="item__link" href="#"></a>
+                        </article>
+                        <article class="item item--slider">
+                              <picture class="img img--item">
+                                <source class="img__item" srcset="img/item-2.webp" type="image/webp">
+                                <source class="img__item" srcset="img/item-2.jp2" type="image/jp2"><img class="img__item" src="img/item-2.png" alt="item-2">
+                              </picture>
+                          <div class="item__info">
+                            <div class="rating">
+                                  <picture class="img img--star">
+                                    <source class="img__item" srcset="img/star-full.webp" type="image/webp">
+                                    <source class="img__item" srcset="img/star-full.jp2" type="image/jp2"><img class="img__item" src="img/star-full.png" alt="star-full">
+                                  </picture>
+                                  <picture class="img img--star">
+                                    <source class="img__item" srcset="img/star-full.webp" type="image/webp">
+                                    <source class="img__item" srcset="img/star-full.jp2" type="image/jp2"><img class="img__item" src="img/star-full.png" alt="star-full">
+                                  </picture>
+                                  <picture class="img img--star">
+                                    <source class="img__item" srcset="img/star-full.webp" type="image/webp">
+                                    <source class="img__item" srcset="img/star-full.jp2" type="image/jp2"><img class="img__item" src="img/star-full.png" alt="star-full">
+                                  </picture>
+                                  <picture class="img img--star">
+                                    <source class="img__item" srcset="img/star-full.webp" type="image/webp">
+                                    <source class="img__item" srcset="img/star-full.jp2" type="image/jp2"><img class="img__item" src="img/star-full.png" alt="star-full">
+                                  </picture>
+                                  <picture class="img img--star">
+                                    <source class="img__item" srcset="img/star-empty.webp" type="image/webp">
+                                    <source class="img__item" srcset="img/star-empty.jp2" type="image/jp2"><img class="img__item" src="img/star-empty.png" alt="star-empty">
+                                  </picture>
+                            </div>
+                            <h3 class="item__title">Платье с цветочным принтом</h3>
+                            <div class="item__price"><span class="item__count">123</span><span class="item__curr">грн</span></div>
+                          </div><span class="item__status item__status--hit">хит продаж</span><a class="item__link" href="#"></a>
+                        </article>
+                        <article class="item item--slider">
+                              <picture class="img img--item">
+                                <source class="img__item" srcset="img/item-3.webp" type="image/webp">
+                                <source class="img__item" srcset="img/item-3.jp2" type="image/jp2"><img class="img__item" src="img/item-3.png" alt="item-3">
+                              </picture>
+                          <div class="item__info">
+                            <div class="rating">
+                                  <picture class="img img--star">
+                                    <source class="img__item" srcset="img/star-full.webp" type="image/webp">
+                                    <source class="img__item" srcset="img/star-full.jp2" type="image/jp2"><img class="img__item" src="img/star-full.png" alt="star-full">
+                                  </picture>
+                                  <picture class="img img--star">
+                                    <source class="img__item" srcset="img/star-full.webp" type="image/webp">
+                                    <source class="img__item" srcset="img/star-full.jp2" type="image/jp2"><img class="img__item" src="img/star-full.png" alt="star-full">
+                                  </picture>
+                                  <picture class="img img--star">
+                                    <source class="img__item" srcset="img/star-full.webp" type="image/webp">
+                                    <source class="img__item" srcset="img/star-full.jp2" type="image/jp2"><img class="img__item" src="img/star-full.png" alt="star-full">
+                                  </picture>
+                                  <picture class="img img--star">
+                                    <source class="img__item" srcset="img/star-full.webp" type="image/webp">
+                                    <source class="img__item" srcset="img/star-full.jp2" type="image/jp2"><img class="img__item" src="img/star-full.png" alt="star-full">
+                                  </picture>
+                                  <picture class="img img--star">
+                                    <source class="img__item" srcset="img/star-empty.webp" type="image/webp">
+                                    <source class="img__item" srcset="img/star-empty.jp2" type="image/jp2"><img class="img__item" src="img/star-empty.png" alt="star-empty">
+                                  </picture>
+                            </div>
+                            <h3 class="item__title">Джинсовый комбинезон</h3>
+                            <div class="item__price"><span class="item__count">123</span><span class="item__curr">грн</span></div>
+                          </div><a class="item__link" href="#"></a>
+                        </article>
+                        <article class="item item--slider">
+                              <picture class="img img--item">
+                                <source class="img__item" srcset="img/item-1.webp" type="image/webp">
+                                <source class="img__item" srcset="img/item-1.jp2" type="image/jp2"><img class="img__item" src="img/item-1.png" alt="item-1">
+                              </picture>
+                          <div class="item__info">
+                            <div class="rating">
+                                  <picture class="img img--star">
+                                    <source class="img__item" srcset="img/star-full.webp" type="image/webp">
+                                    <source class="img__item" srcset="img/star-full.jp2" type="image/jp2"><img class="img__item" src="img/star-full.png" alt="star-full">
+                                  </picture>
+                                  <picture class="img img--star">
+                                    <source class="img__item" srcset="img/star-full.webp" type="image/webp">
+                                    <source class="img__item" srcset="img/star-full.jp2" type="image/jp2"><img class="img__item" src="img/star-full.png" alt="star-full">
+                                  </picture>
+                                  <picture class="img img--star">
+                                    <source class="img__item" srcset="img/star-full.webp" type="image/webp">
+                                    <source class="img__item" srcset="img/star-full.jp2" type="image/jp2"><img class="img__item" src="img/star-full.png" alt="star-full">
+                                  </picture>
+                                  <picture class="img img--star">
+                                    <source class="img__item" srcset="img/star-full.webp" type="image/webp">
+                                    <source class="img__item" srcset="img/star-full.jp2" type="image/jp2"><img class="img__item" src="img/star-full.png" alt="star-full">
+                                  </picture>
+                                  <picture class="img img--star">
+                                    <source class="img__item" srcset="img/star-full.webp" type="image/webp">
+                                    <source class="img__item" srcset="img/star-full.jp2" type="image/jp2"><img class="img__item" src="img/star-full.png" alt="star-full">
+                                  </picture>
+                            </div>
+                            <h3 class="item__title">Свитер в полоску</h3>
+                            <div class="item__price"><span class="item__count">123</span><span class="item__curr">грн</span></div>
+                          </div><span class="item__status item__status--new">новинка</span><a class="item__link" href="#"></a>
+                        </article>
+                        <article class="item item--slider">
+                              <picture class="img img--item">
+                                <source class="img__item" srcset="img/item-2.webp" type="image/webp">
+                                <source class="img__item" srcset="img/item-2.jp2" type="image/jp2"><img class="img__item" src="img/item-2.png" alt="item-2">
+                              </picture>
+                          <div class="item__info">
+                            <div class="rating">
+                                  <picture class="img img--star">
+                                    <source class="img__item" srcset="img/star-full.webp" type="image/webp">
+                                    <source class="img__item" srcset="img/star-full.jp2" type="image/jp2"><img class="img__item" src="img/star-full.png" alt="star-full">
+                                  </picture>
+                                  <picture class="img img--star">
+                                    <source class="img__item" srcset="img/star-full.webp" type="image/webp">
+                                    <source class="img__item" srcset="img/star-full.jp2" type="image/jp2"><img class="img__item" src="img/star-full.png" alt="star-full">
+                                  </picture>
+                                  <picture class="img img--star">
+                                    <source class="img__item" srcset="img/star-full.webp" type="image/webp">
+                                    <source class="img__item" srcset="img/star-full.jp2" type="image/jp2"><img class="img__item" src="img/star-full.png" alt="star-full">
+                                  </picture>
+                                  <picture class="img img--star">
+                                    <source class="img__item" srcset="img/star-full.webp" type="image/webp">
+                                    <source class="img__item" srcset="img/star-full.jp2" type="image/jp2"><img class="img__item" src="img/star-full.png" alt="star-full">
+                                  </picture>
+                                  <picture class="img img--star">
+                                    <source class="img__item" srcset="img/star-empty.webp" type="image/webp">
+                                    <source class="img__item" srcset="img/star-empty.jp2" type="image/jp2"><img class="img__item" src="img/star-empty.png" alt="star-empty">
+                                  </picture>
+                            </div>
+                            <h3 class="item__title">Платье с цветочным принтом</h3>
+                            <div class="item__price"><span class="item__count">123</span><span class="item__curr">грн</span></div>
+                          </div><span class="item__status item__status--hit">хит продаж</span><a class="item__link" href="#"></a>
+                        </article>
+                        <article class="item item--slider">
+                              <picture class="img img--item">
+                                <source class="img__item" srcset="img/item-3.webp" type="image/webp">
+                                <source class="img__item" srcset="img/item-3.jp2" type="image/jp2"><img class="img__item" src="img/item-3.png" alt="item-3">
+                              </picture>
+                          <div class="item__info">
+                            <div class="rating">
+                                  <picture class="img img--star">
+                                    <source class="img__item" srcset="img/star-full.webp" type="image/webp">
+                                    <source class="img__item" srcset="img/star-full.jp2" type="image/jp2"><img class="img__item" src="img/star-full.png" alt="star-full">
+                                  </picture>
+                                  <picture class="img img--star">
+                                    <source class="img__item" srcset="img/star-full.webp" type="image/webp">
+                                    <source class="img__item" srcset="img/star-full.jp2" type="image/jp2"><img class="img__item" src="img/star-full.png" alt="star-full">
+                                  </picture>
+                                  <picture class="img img--star">
+                                    <source class="img__item" srcset="img/star-full.webp" type="image/webp">
+                                    <source class="img__item" srcset="img/star-full.jp2" type="image/jp2"><img class="img__item" src="img/star-full.png" alt="star-full">
+                                  </picture>
+                                  <picture class="img img--star">
+                                    <source class="img__item" srcset="img/star-full.webp" type="image/webp">
+                                    <source class="img__item" srcset="img/star-full.jp2" type="image/jp2"><img class="img__item" src="img/star-full.png" alt="star-full">
+                                  </picture>
+                                  <picture class="img img--star">
+                                    <source class="img__item" srcset="img/star-empty.webp" type="image/webp">
+                                    <source class="img__item" srcset="img/star-empty.jp2" type="image/jp2"><img class="img__item" src="img/star-empty.png" alt="star-empty">
+                                  </picture>
+                            </div>
+                            <h3 class="item__title">Джинсовый комбинезон</h3>
+                            <div class="item__price"><span class="item__count">123</span><span class="item__curr">грн</span></div>
+                          </div><a class="item__link" href="#"></a>
+                        </article>
+                        <article class="item item--slider">
+                              <picture class="img img--item">
+                                <source class="img__item" srcset="img/item-1.webp" type="image/webp">
+                                <source class="img__item" srcset="img/item-1.jp2" type="image/jp2"><img class="img__item" src="img/item-1.png" alt="item-1">
+                              </picture>
+                          <div class="item__info">
+                            <div class="rating">
+                                  <picture class="img img--star">
+                                    <source class="img__item" srcset="img/star-full.webp" type="image/webp">
+                                    <source class="img__item" srcset="img/star-full.jp2" type="image/jp2"><img class="img__item" src="img/star-full.png" alt="star-full">
+                                  </picture>
+                                  <picture class="img img--star">
+                                    <source class="img__item" srcset="img/star-full.webp" type="image/webp">
+                                    <source class="img__item" srcset="img/star-full.jp2" type="image/jp2"><img class="img__item" src="img/star-full.png" alt="star-full">
+                                  </picture>
+                                  <picture class="img img--star">
+                                    <source class="img__item" srcset="img/star-full.webp" type="image/webp">
+                                    <source class="img__item" srcset="img/star-full.jp2" type="image/jp2"><img class="img__item" src="img/star-full.png" alt="star-full">
+                                  </picture>
+                                  <picture class="img img--star">
+                                    <source class="img__item" srcset="img/star-full.webp" type="image/webp">
+                                    <source class="img__item" srcset="img/star-full.jp2" type="image/jp2"><img class="img__item" src="img/star-full.png" alt="star-full">
+                                  </picture>
+                                  <picture class="img img--star">
+                                    <source class="img__item" srcset="img/star-full.webp" type="image/webp">
+                                    <source class="img__item" srcset="img/star-full.jp2" type="image/jp2"><img class="img__item" src="img/star-full.png" alt="star-full">
+                                  </picture>
+                            </div>
+                            <h3 class="item__title">Свитер в полоску</h3>
+                            <div class="item__price"><span class="item__count">123</span><span class="item__curr">грн</span></div>
+                          </div><span class="item__status item__status--new">новинка</span><a class="item__link" href="#"></a>
+                        </article>
+                        <article class="item item--slider">
+                              <picture class="img img--item">
+                                <source class="img__item" srcset="img/item-2.webp" type="image/webp">
+                                <source class="img__item" srcset="img/item-2.jp2" type="image/jp2"><img class="img__item" src="img/item-2.png" alt="item-2">
+                              </picture>
+                          <div class="item__info">
+                            <div class="rating">
+                                  <picture class="img img--star">
+                                    <source class="img__item" srcset="img/star-full.webp" type="image/webp">
+                                    <source class="img__item" srcset="img/star-full.jp2" type="image/jp2"><img class="img__item" src="img/star-full.png" alt="star-full">
+                                  </picture>
+                                  <picture class="img img--star">
+                                    <source class="img__item" srcset="img/star-full.webp" type="image/webp">
+                                    <source class="img__item" srcset="img/star-full.jp2" type="image/jp2"><img class="img__item" src="img/star-full.png" alt="star-full">
+                                  </picture>
+                                  <picture class="img img--star">
+                                    <source class="img__item" srcset="img/star-full.webp" type="image/webp">
+                                    <source class="img__item" srcset="img/star-full.jp2" type="image/jp2"><img class="img__item" src="img/star-full.png" alt="star-full">
+                                  </picture>
+                                  <picture class="img img--star">
+                                    <source class="img__item" srcset="img/star-full.webp" type="image/webp">
+                                    <source class="img__item" srcset="img/star-full.jp2" type="image/jp2"><img class="img__item" src="img/star-full.png" alt="star-full">
+                                  </picture>
+                                  <picture class="img img--star">
+                                    <source class="img__item" srcset="img/star-empty.webp" type="image/webp">
+                                    <source class="img__item" srcset="img/star-empty.jp2" type="image/jp2"><img class="img__item" src="img/star-empty.png" alt="star-empty">
+                                  </picture>
+                            </div>
+                            <h3 class="item__title">Платье с цветочным принтом</h3>
+                            <div class="item__price"><span class="item__count">123</span><span class="item__curr">грн</span></div>
+                          </div><span class="item__status item__status--hit">хит продаж</span><a class="item__link" href="#"></a>
+                        </article>
+                        <article class="item item--slider">
+                              <picture class="img img--item">
+                                <source class="img__item" srcset="img/item-3.webp" type="image/webp">
+                                <source class="img__item" srcset="img/item-3.jp2" type="image/jp2"><img class="img__item" src="img/item-3.png" alt="item-3">
+                              </picture>
+                          <div class="item__info">
+                            <div class="rating">
+                                  <picture class="img img--star">
+                                    <source class="img__item" srcset="img/star-full.webp" type="image/webp">
+                                    <source class="img__item" srcset="img/star-full.jp2" type="image/jp2"><img class="img__item" src="img/star-full.png" alt="star-full">
+                                  </picture>
+                                  <picture class="img img--star">
+                                    <source class="img__item" srcset="img/star-full.webp" type="image/webp">
+                                    <source class="img__item" srcset="img/star-full.jp2" type="image/jp2"><img class="img__item" src="img/star-full.png" alt="star-full">
+                                  </picture>
+                                  <picture class="img img--star">
+                                    <source class="img__item" srcset="img/star-full.webp" type="image/webp">
+                                    <source class="img__item" srcset="img/star-full.jp2" type="image/jp2"><img class="img__item" src="img/star-full.png" alt="star-full">
+                                  </picture>
+                                  <picture class="img img--star">
+                                    <source class="img__item" srcset="img/star-full.webp" type="image/webp">
+                                    <source class="img__item" srcset="img/star-full.jp2" type="image/jp2"><img class="img__item" src="img/star-full.png" alt="star-full">
+                                  </picture>
+                                  <picture class="img img--star">
+                                    <source class="img__item" srcset="img/star-empty.webp" type="image/webp">
+                                    <source class="img__item" srcset="img/star-empty.jp2" type="image/jp2"><img class="img__item" src="img/star-empty.png" alt="star-empty">
+                                  </picture>
+                            </div>
+                            <h3 class="item__title">Джинсовый комбинезон</h3>
+                            <div class="item__price"><span class="item__count">123</span><span class="item__curr">грн</span></div>
+                          </div><a class="item__link" href="#"></a>
+                        </article>
+                  </div>
+                  <div class="slider__control">
+                    <div class="slider__prev"></div>
+                    <div class="slider__dots"></div>
+                    <div class="slider__next"></div>
+                  </div>
                 </div>
               </section>
             </div>
