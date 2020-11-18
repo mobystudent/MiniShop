@@ -1,6 +1,8 @@
+// Это миксин фильтра
 mixin filter(obj)
 	.filter
 		if obj.type == 'block'
+			// Если тип фильтра выпадающий список под блоком
 			.filter__field.filter__field--block
 				header.filter__header
 					h3.filter__title!= obj.title
@@ -12,6 +14,7 @@ mixin filter(obj)
 					each item in obj.items
 						li.filter__item.filter__item--block!= item
 		else
+			// Если тип фильтра выпадающий список в поле
 			.filter__field.filter__field--select
 				h3.filter__title!= obj.title
 				.filter__select

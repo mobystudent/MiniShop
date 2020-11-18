@@ -1,12 +1,16 @@
+// Миксин для блока с товаром
 mixin item(obj)
 	article.item(class=`item--${obj.class}`)
+		// Миксин картинки
 		+picture('item', `${obj.nameImg}`)
 		.item__info
 			.rating
 				if obj.rating == 5
+					// Если рейтинг 5 звезд, то просто выводим через цикл
 					- for (let i = 0; i < obj.rating; i++)
 						+picture('star', 'star-full')
 				else
+					// Если рейтинг меньше 5-ти, то выводим кол-во звезд, остальные заполняем пустыми
 					- for (let i = 0; i < obj.rating; i++)
 						+picture('star', 'star-full')
 					- for (let i = 0; i < (5 - obj.rating); i++)
@@ -17,5 +21,6 @@ mixin item(obj)
 				span.item__curr
 					| грн
 		if obj.status
+			// Если есть статус добавляем метку
 			span.item__status(class=`item__status--${obj.status.item}`)!= obj.status.name
 		a.item__link(href="#")

@@ -16,6 +16,9 @@
         <path d="M11 15L4 8l7-7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
       </symbol>
     </svg>
+    <!-- Миксин картинки для современных форматов-->
+    <!-- Миксин для блока с товаром-->
+    <!-- Это миксин фильтра-->
     <div class="wrapper">
       <header class="header"></header>
       <main class="main">
@@ -24,6 +27,7 @@
           <div class="main__body">
             <aside class="main__filters">
                   <div class="filter">
+                    <!-- Если тип фильтра выпадающий список под блоком-->
                     <div class="filter__field filter__field--block">
                       <header class="filter__header">
                         <h3 class="filter__title">Категории</h3>
@@ -43,6 +47,7 @@
                     </div>
                   </div>
                   <div class="filter">
+                    <!-- Если тип фильтра выпадающий список в поле-->
                     <div class="filter__field filter__field--select">
                       <h3 class="filter__title">Размер</h3>
                       <div class="filter__select">
@@ -65,6 +70,7 @@
                     </div>
                   </div>
                   <div class="filter">
+                    <!-- Если тип фильтра выпадающий список в поле-->
                     <div class="filter__field filter__field--select">
                       <h3 class="filter__title">Цвет</h3>
                       <div class="filter__select">
@@ -87,6 +93,7 @@
                     </div>
                   </div>
                   <div class="filter">
+                    <!-- Если тип фильтра выпадающий список под блоком-->
                     <div class="filter__field filter__field--block">
                       <header class="filter__header">
                         <h3 class="filter__title">Материал</h3>
@@ -113,12 +120,14 @@
             <div class="main__content">
               <section class="section section--items">
                     <article class="item item--preview">
+                      <!-- Миксин картинки-->
                           <picture class="img img--item">
                             <source class="img__item" srcset="img/item-1.webp" type="image/webp">
                             <source class="img__item" srcset="img/item-1.jp2" type="image/jp2"><img class="img__item" src="img/item-1.png" alt="item-1">
                           </picture>
                       <div class="item__info">
                         <div class="rating">
+                          <!-- Если рейтинг 5 звезд, то просто выводим через цикл-->
                               <picture class="img img--star">
                                 <source class="img__item" srcset="img/star-full.webp" type="image/webp">
                                 <source class="img__item" srcset="img/star-full.jp2" type="image/jp2"><img class="img__item" src="img/star-full.png" alt="star-full">
@@ -142,15 +151,18 @@
                         </div>
                         <h3 class="item__title">Свитер в полоску</h3>
                         <div class="item__price"><span class="item__count">123</span><span class="item__curr">грн</span></div>
-                      </div><span class="item__status item__status--new">новинка</span><a class="item__link" href="#"></a>
+                      </div>
+                      <!-- Если есть статус добавляем метку--><span class="item__status item__status--new">новинка</span><a class="item__link" href="#"></a>
                     </article>
                     <article class="item item--preview">
+                      <!-- Миксин картинки-->
                           <picture class="img img--item">
                             <source class="img__item" srcset="img/item-2.webp" type="image/webp">
                             <source class="img__item" srcset="img/item-2.jp2" type="image/jp2"><img class="img__item" src="img/item-2.png" alt="item-2">
                           </picture>
                       <div class="item__info">
                         <div class="rating">
+                          <!-- Если рейтинг меньше 5-ти, то выводим кол-во звезд, остальные заполняем пустыми-->
                               <picture class="img img--star">
                                 <source class="img__item" srcset="img/star-full.webp" type="image/webp">
                                 <source class="img__item" srcset="img/star-full.jp2" type="image/jp2"><img class="img__item" src="img/star-full.png" alt="star-full">
@@ -174,15 +186,18 @@
                         </div>
                         <h3 class="item__title">Платье с цветочным принтом</h3>
                         <div class="item__price"><span class="item__count">123</span><span class="item__curr">грн</span></div>
-                      </div><span class="item__status item__status--hit">хит продаж</span><a class="item__link" href="#"></a>
+                      </div>
+                      <!-- Если есть статус добавляем метку--><span class="item__status item__status--hit">хит продаж</span><a class="item__link" href="#"></a>
                     </article>
                     <article class="item item--preview">
+                      <!-- Миксин картинки-->
                           <picture class="img img--item">
                             <source class="img__item" srcset="img/item-3.webp" type="image/webp">
                             <source class="img__item" srcset="img/item-3.jp2" type="image/jp2"><img class="img__item" src="img/item-3.png" alt="item-3">
                           </picture>
                       <div class="item__info">
                         <div class="rating">
+                          <!-- Если рейтинг меньше 5-ти, то выводим кол-во звезд, остальные заполняем пустыми-->
                               <picture class="img img--star">
                                 <source class="img__item" srcset="img/star-full.webp" type="image/webp">
                                 <source class="img__item" srcset="img/star-full.jp2" type="image/jp2"><img class="img__item" src="img/star-full.png" alt="star-full">
@@ -214,12 +229,14 @@
                 <div class="slider">
                   <div class="slider__content" id="slider">
                         <article class="item item--slider">
+                          <!-- Миксин картинки-->
                               <picture class="img img--item">
                                 <source class="img__item" srcset="img/item-1.webp" type="image/webp">
                                 <source class="img__item" srcset="img/item-1.jp2" type="image/jp2"><img class="img__item" src="img/item-1.png" alt="item-1">
                               </picture>
                           <div class="item__info">
                             <div class="rating">
+                              <!-- Если рейтинг 5 звезд, то просто выводим через цикл-->
                                   <picture class="img img--star">
                                     <source class="img__item" srcset="img/star-full.webp" type="image/webp">
                                     <source class="img__item" srcset="img/star-full.jp2" type="image/jp2"><img class="img__item" src="img/star-full.png" alt="star-full">
@@ -243,15 +260,18 @@
                             </div>
                             <h3 class="item__title">Свитер в полоску</h3>
                             <div class="item__price"><span class="item__count">123</span><span class="item__curr">грн</span></div>
-                          </div><span class="item__status item__status--new">новинка</span><a class="item__link" href="#"></a>
+                          </div>
+                          <!-- Если есть статус добавляем метку--><span class="item__status item__status--new">новинка</span><a class="item__link" href="#"></a>
                         </article>
                         <article class="item item--slider">
+                          <!-- Миксин картинки-->
                               <picture class="img img--item">
                                 <source class="img__item" srcset="img/item-2.webp" type="image/webp">
                                 <source class="img__item" srcset="img/item-2.jp2" type="image/jp2"><img class="img__item" src="img/item-2.png" alt="item-2">
                               </picture>
                           <div class="item__info">
                             <div class="rating">
+                              <!-- Если рейтинг меньше 5-ти, то выводим кол-во звезд, остальные заполняем пустыми-->
                                   <picture class="img img--star">
                                     <source class="img__item" srcset="img/star-full.webp" type="image/webp">
                                     <source class="img__item" srcset="img/star-full.jp2" type="image/jp2"><img class="img__item" src="img/star-full.png" alt="star-full">
@@ -275,15 +295,18 @@
                             </div>
                             <h3 class="item__title">Платье с цветочным принтом</h3>
                             <div class="item__price"><span class="item__count">123</span><span class="item__curr">грн</span></div>
-                          </div><span class="item__status item__status--hit">хит продаж</span><a class="item__link" href="#"></a>
+                          </div>
+                          <!-- Если есть статус добавляем метку--><span class="item__status item__status--hit">хит продаж</span><a class="item__link" href="#"></a>
                         </article>
                         <article class="item item--slider">
+                          <!-- Миксин картинки-->
                               <picture class="img img--item">
                                 <source class="img__item" srcset="img/item-3.webp" type="image/webp">
                                 <source class="img__item" srcset="img/item-3.jp2" type="image/jp2"><img class="img__item" src="img/item-3.png" alt="item-3">
                               </picture>
                           <div class="item__info">
                             <div class="rating">
+                              <!-- Если рейтинг меньше 5-ти, то выводим кол-во звезд, остальные заполняем пустыми-->
                                   <picture class="img img--star">
                                     <source class="img__item" srcset="img/star-full.webp" type="image/webp">
                                     <source class="img__item" srcset="img/star-full.jp2" type="image/jp2"><img class="img__item" src="img/star-full.png" alt="star-full">
@@ -310,12 +333,14 @@
                           </div><a class="item__link" href="#"></a>
                         </article>
                         <article class="item item--slider">
+                          <!-- Миксин картинки-->
                               <picture class="img img--item">
                                 <source class="img__item" srcset="img/item-1.webp" type="image/webp">
                                 <source class="img__item" srcset="img/item-1.jp2" type="image/jp2"><img class="img__item" src="img/item-1.png" alt="item-1">
                               </picture>
                           <div class="item__info">
                             <div class="rating">
+                              <!-- Если рейтинг 5 звезд, то просто выводим через цикл-->
                                   <picture class="img img--star">
                                     <source class="img__item" srcset="img/star-full.webp" type="image/webp">
                                     <source class="img__item" srcset="img/star-full.jp2" type="image/jp2"><img class="img__item" src="img/star-full.png" alt="star-full">
@@ -339,15 +364,18 @@
                             </div>
                             <h3 class="item__title">Свитер в полоску</h3>
                             <div class="item__price"><span class="item__count">123</span><span class="item__curr">грн</span></div>
-                          </div><span class="item__status item__status--new">новинка</span><a class="item__link" href="#"></a>
+                          </div>
+                          <!-- Если есть статус добавляем метку--><span class="item__status item__status--new">новинка</span><a class="item__link" href="#"></a>
                         </article>
                         <article class="item item--slider">
+                          <!-- Миксин картинки-->
                               <picture class="img img--item">
                                 <source class="img__item" srcset="img/item-2.webp" type="image/webp">
                                 <source class="img__item" srcset="img/item-2.jp2" type="image/jp2"><img class="img__item" src="img/item-2.png" alt="item-2">
                               </picture>
                           <div class="item__info">
                             <div class="rating">
+                              <!-- Если рейтинг меньше 5-ти, то выводим кол-во звезд, остальные заполняем пустыми-->
                                   <picture class="img img--star">
                                     <source class="img__item" srcset="img/star-full.webp" type="image/webp">
                                     <source class="img__item" srcset="img/star-full.jp2" type="image/jp2"><img class="img__item" src="img/star-full.png" alt="star-full">
@@ -371,15 +399,18 @@
                             </div>
                             <h3 class="item__title">Платье с цветочным принтом</h3>
                             <div class="item__price"><span class="item__count">123</span><span class="item__curr">грн</span></div>
-                          </div><span class="item__status item__status--hit">хит продаж</span><a class="item__link" href="#"></a>
+                          </div>
+                          <!-- Если есть статус добавляем метку--><span class="item__status item__status--hit">хит продаж</span><a class="item__link" href="#"></a>
                         </article>
                         <article class="item item--slider">
+                          <!-- Миксин картинки-->
                               <picture class="img img--item">
                                 <source class="img__item" srcset="img/item-3.webp" type="image/webp">
                                 <source class="img__item" srcset="img/item-3.jp2" type="image/jp2"><img class="img__item" src="img/item-3.png" alt="item-3">
                               </picture>
                           <div class="item__info">
                             <div class="rating">
+                              <!-- Если рейтинг меньше 5-ти, то выводим кол-во звезд, остальные заполняем пустыми-->
                                   <picture class="img img--star">
                                     <source class="img__item" srcset="img/star-full.webp" type="image/webp">
                                     <source class="img__item" srcset="img/star-full.jp2" type="image/jp2"><img class="img__item" src="img/star-full.png" alt="star-full">
@@ -406,12 +437,14 @@
                           </div><a class="item__link" href="#"></a>
                         </article>
                         <article class="item item--slider">
+                          <!-- Миксин картинки-->
                               <picture class="img img--item">
                                 <source class="img__item" srcset="img/item-1.webp" type="image/webp">
                                 <source class="img__item" srcset="img/item-1.jp2" type="image/jp2"><img class="img__item" src="img/item-1.png" alt="item-1">
                               </picture>
                           <div class="item__info">
                             <div class="rating">
+                              <!-- Если рейтинг 5 звезд, то просто выводим через цикл-->
                                   <picture class="img img--star">
                                     <source class="img__item" srcset="img/star-full.webp" type="image/webp">
                                     <source class="img__item" srcset="img/star-full.jp2" type="image/jp2"><img class="img__item" src="img/star-full.png" alt="star-full">
@@ -435,15 +468,18 @@
                             </div>
                             <h3 class="item__title">Свитер в полоску</h3>
                             <div class="item__price"><span class="item__count">123</span><span class="item__curr">грн</span></div>
-                          </div><span class="item__status item__status--new">новинка</span><a class="item__link" href="#"></a>
+                          </div>
+                          <!-- Если есть статус добавляем метку--><span class="item__status item__status--new">новинка</span><a class="item__link" href="#"></a>
                         </article>
                         <article class="item item--slider">
+                          <!-- Миксин картинки-->
                               <picture class="img img--item">
                                 <source class="img__item" srcset="img/item-2.webp" type="image/webp">
                                 <source class="img__item" srcset="img/item-2.jp2" type="image/jp2"><img class="img__item" src="img/item-2.png" alt="item-2">
                               </picture>
                           <div class="item__info">
                             <div class="rating">
+                              <!-- Если рейтинг меньше 5-ти, то выводим кол-во звезд, остальные заполняем пустыми-->
                                   <picture class="img img--star">
                                     <source class="img__item" srcset="img/star-full.webp" type="image/webp">
                                     <source class="img__item" srcset="img/star-full.jp2" type="image/jp2"><img class="img__item" src="img/star-full.png" alt="star-full">
@@ -467,15 +503,18 @@
                             </div>
                             <h3 class="item__title">Платье с цветочным принтом</h3>
                             <div class="item__price"><span class="item__count">123</span><span class="item__curr">грн</span></div>
-                          </div><span class="item__status item__status--hit">хит продаж</span><a class="item__link" href="#"></a>
+                          </div>
+                          <!-- Если есть статус добавляем метку--><span class="item__status item__status--hit">хит продаж</span><a class="item__link" href="#"></a>
                         </article>
                         <article class="item item--slider">
+                          <!-- Миксин картинки-->
                               <picture class="img img--item">
                                 <source class="img__item" srcset="img/item-3.webp" type="image/webp">
                                 <source class="img__item" srcset="img/item-3.jp2" type="image/jp2"><img class="img__item" src="img/item-3.png" alt="item-3">
                               </picture>
                           <div class="item__info">
                             <div class="rating">
+                              <!-- Если рейтинг меньше 5-ти, то выводим кол-во звезд, остальные заполняем пустыми-->
                                   <picture class="img img--star">
                                     <source class="img__item" srcset="img/star-full.webp" type="image/webp">
                                     <source class="img__item" srcset="img/star-full.jp2" type="image/jp2"><img class="img__item" src="img/star-full.png" alt="star-full">

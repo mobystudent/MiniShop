@@ -1,3 +1,4 @@
+// Миксин картинки для современных форматов
 mixin picture(pictureClass, name)
 	picture.img(class=`img--${pictureClass}`)
 		source.img__item(srcset=`img/${name}.webp` type="image/webp")
