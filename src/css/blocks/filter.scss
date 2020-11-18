@@ -4,7 +4,20 @@
 		justify-content: space-between;
 		align-items: center;
 		border-bottom: 1px solid $gray;
-		padding: 7px 15px;
+
+		&--block {
+			padding: 7px 15px;
+		}
+
+		&--select {
+			padding: 5px 5px 5px 15px;
+		}
+
+		&--active {
+			.icon {
+				transform: rotate(90deg);
+			}
+		}
 	}
 
 	&__title {
@@ -16,17 +29,27 @@
 	&__select {
 		position: relative;
 		width: 160px;
-		margin: -2px -10px -2px 10px;
+		margin-left: 10px;
 	}
 
 	&__header {
 		display: flex;
 		align-items: center;
 		justify-content: space-between;
-		border: 1px solid $gray;
-		border-radius: 5px;
-		background: $lighterGray;
-		padding: 5px 10px;
+		width: 100%;
+
+		&--select {
+			border: 1px solid $gray;
+			border-radius: 5px;
+			background: $lighterGray;
+			padding: 5px 10px;
+		}
+
+		&--active {
+			.icon {
+				transform: rotate(90deg);
+			}
+		}
 	}
 
 	&__selected {
@@ -37,6 +60,8 @@
 	}
 
 	&__body {
+		display: none;
+
 		&--block {
 			padding: 5px 30px;
 			height: 175px;

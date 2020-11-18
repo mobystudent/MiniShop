@@ -1,20 +1,21 @@
 mixin filter(obj)
 	.filter
 		if obj.type == 'block'
-			.filter__field
-				h3.filter__title!= obj.title
-				svg.icon.icon--arrow
-					use.icon__item(xlink:href='#arrow')
+			.filter__field.filter__field--block
+				header.filter__header
+					h3.filter__title!= obj.title
+					svg.icon.icon--arrow
+						use.icon__item(xlink:href='#arrow')
 			.filter__body.filter__body--block
 				ul.filter__list.filter__list--block
 					
 					each item in obj.items
 						li.filter__item.filter__item--block!= item
 		else
-			.filter__field
+			.filter__field.filter__field--select
 				h3.filter__title!= obj.title
 				.filter__select
-					header.filter__header
+					header.filter__header.filter__header--select
 						span.filter__selected!= obj.title
 						svg.icon.icon--arrow
 							use.icon__item(xlink:href='#arrow')
