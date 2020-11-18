@@ -14,6 +14,13 @@ block content
 					| Одежда для девочек
 				.main__body
 					aside.main__filters
+						+filter({title: 'Категории', items: ['Все', 'Платья', 'Пижамы', 'Кофточки', 'Футболки'], type: 'block'})
+						+filter({title: 'Размер', items: ['Все', '56', '54', '52', '50', '48'], type: 'select'})
+						+filter({title: 'Цвет', items: ['Все', 'Красный', 'Зелёный', 'Белый', 'Серый', 'Чёрный'], type: 'select'})
+						+filter({title: 'Материал', items: ['Все', '100% хлопок', 'Трикотаж', 'Шерсть', 'Джинсовый', 'Составной', 'Синтетика', 'Синтетика', 'Синтетика'], type: 'block'})
+
+						a.btn.btn--filter(href="#")
+							| Применить фильтр
 						
 					.content
 						section.section.section--items
@@ -25,7 +32,7 @@ block content
 								| Похожие товары
 							.slider
 								+item({nameImg: 'item-1', rating: '5', title: 'Свитер в полоску', price: '123', status: { item: 'new', name: 'новинка'}})
-								+item({nameImg: 'item-2', rating: '5', title: 'Платье с цветочным принтом', price: '123', status: { item: 'hit', name: 'хит продаж'}})
+								+item({nameImg: 'item-2', rating: '4', title: 'Платье с цветочным принтом', price: '123', status: { item: 'hit', name: 'хит продаж'}})
 								+item({nameImg: 'item-3', rating: '4', title: 'Джинсовый комбинезон', price: '123'})
 			
 		include includes/footer

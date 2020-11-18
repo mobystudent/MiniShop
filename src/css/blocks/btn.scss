@@ -1,0 +1,16 @@
+.btn {
+	&--filter {
+		font: 13px/24px Arial;
+		font-weight: 400;
+		color: $darkTurquoise;
+		padding: 7px 20px;
+		display: block;
+		text-align: center;
+		transition: color 0.25s ease-in-out, background 0.25s ease-in-out;
+
+		&:hover {
+			color: $white;
+			background: $darkTurquoise;
+		}
+	}
+}

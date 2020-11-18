@@ -12,14 +12,101 @@
     <script defer src="js/script.min.js"></script>
   </head>
   <body>
-    <svg xmlns="http://www.w3.org/2000/svg" width="0" height="0" style="position:absolute;" aria-hidden="true" focusable="false"></svg>
+    <svg xmlns="http://www.w3.org/2000/svg" width="0" height="0" style="position:absolute;" aria-hidden="true" focusable="false">
+      <symbol id="arrow" fill="none" viewBox="0 0 16 16">
+        <path d="M11 15L4 8l7-7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+      </symbol>
+    </svg>
     <div class="wrapper">
       <header class="header"></header>
       <main class="main">
         <div class="container">
           <h1 class="main__title">Одежда для девочек</h1>
           <div class="main__body">
-            <aside class="main__filters"></aside>
+            <aside class="main__filters">
+                  <div class="filter">
+                    <div class="filter__field">
+                      <h3 class="filter__title">Категории</h3>
+                      <svg class="icon icon--arrow">
+                        <use class="icon__item" xlink:href="#arrow"></use>
+                      </svg>
+                    </div>
+                    <div class="filter__body filter__body--block">
+                      <ul class="filter__list filter__list--block">
+                        <li class="filter__item filter__item--block">Все</li>
+                        <li class="filter__item filter__item--block">Платья</li>
+                        <li class="filter__item filter__item--block">Пижамы</li>
+                        <li class="filter__item filter__item--block">Кофточки</li>
+                        <li class="filter__item filter__item--block">Футболки</li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="filter">
+                    <div class="filter__field">
+                      <h3 class="filter__title">Размер</h3>
+                      <div class="filter__select">
+                        <header class="filter__header"><span class="filter__selected">Размер</span>
+                          <svg class="icon icon--arrow">
+                            <use class="icon__item" xlink:href="#arrow"></use>
+                          </svg>
+                        </header>
+                        <div class="filter__body filter__body--select">
+                          <ul class="filter__list filter__list--select">
+                            <li class="filter__item filter__item--select">Все</li>
+                            <li class="filter__item filter__item--select">56</li>
+                            <li class="filter__item filter__item--select">54</li>
+                            <li class="filter__item filter__item--select">52</li>
+                            <li class="filter__item filter__item--select">50</li>
+                            <li class="filter__item filter__item--select">48</li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="filter">
+                    <div class="filter__field">
+                      <h3 class="filter__title">Цвет</h3>
+                      <div class="filter__select">
+                        <header class="filter__header"><span class="filter__selected">Цвет</span>
+                          <svg class="icon icon--arrow">
+                            <use class="icon__item" xlink:href="#arrow"></use>
+                          </svg>
+                        </header>
+                        <div class="filter__body filter__body--select">
+                          <ul class="filter__list filter__list--select">
+                            <li class="filter__item filter__item--select">Все</li>
+                            <li class="filter__item filter__item--select">Красный</li>
+                            <li class="filter__item filter__item--select">Зелёный</li>
+                            <li class="filter__item filter__item--select">Белый</li>
+                            <li class="filter__item filter__item--select">Серый</li>
+                            <li class="filter__item filter__item--select">Чёрный</li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="filter">
+                    <div class="filter__field">
+                      <h3 class="filter__title">Материал</h3>
+                      <svg class="icon icon--arrow">
+                        <use class="icon__item" xlink:href="#arrow"></use>
+                      </svg>
+                    </div>
+                    <div class="filter__body filter__body--block">
+                      <ul class="filter__list filter__list--block">
+                        <li class="filter__item filter__item--block">Все</li>
+                        <li class="filter__item filter__item--block">100% хлопок</li>
+                        <li class="filter__item filter__item--block">Трикотаж</li>
+                        <li class="filter__item filter__item--block">Шерсть</li>
+                        <li class="filter__item filter__item--block">Джинсовый</li>
+                        <li class="filter__item filter__item--block">Составной</li>
+                        <li class="filter__item filter__item--block">Синтетика</li>
+                        <li class="filter__item filter__item--block">Синтетика</li>
+                        <li class="filter__item filter__item--block">Синтетика</li>
+                      </ul>
+                    </div>
+                  </div><a class="btn btn--filter" href="#">Применить фильтр</a>
+            </aside>
             <div class="content">
               <section class="section section--items">
                     <article class="item">
@@ -178,8 +265,8 @@
                                   <source class="img__item" srcset="img/star-full.jp2" type="image/jp2"><img class="img__item" src="img/star-full.png" alt="star-full">
                                 </picture>
                                 <picture class="img img--star">
-                                  <source class="img__item" srcset="img/star-full.webp" type="image/webp">
-                                  <source class="img__item" srcset="img/star-full.jp2" type="image/jp2"><img class="img__item" src="img/star-full.png" alt="star-full">
+                                  <source class="img__item" srcset="img/star-empty.webp" type="image/webp">
+                                  <source class="img__item" srcset="img/star-empty.jp2" type="image/jp2"><img class="img__item" src="img/star-empty.png" alt="star-empty">
                                 </picture>
                           </div>
                           <h3 class="item__title">Платье с цветочным принтом</h3>

@@ -17,10 +17,12 @@
 		width: 270px;
 		border: 1px solid $lightGray;
 		margin-right: 30px;
+		border-radius: 5px;
 	}
 
 	&__body {
 		display: flex;
+		align-items: flex-start;
 		margin-right: -30px;
 	}
 }
