@@ -4,7 +4,7 @@ mixin filter(obj)
 			.filter__field.filter__field--block
 				header.filter__header
 					h3.filter__title!= obj.title
-					svg.icon.icon--arrow
+					svg.icon.icon--arrow.icon--arrow-filter
 						use.icon__item(xlink:href='#arrow')
 			.filter__body.filter__body--block
 				ul.filter__list.filter__list--block
@@ -17,7 +17,7 @@ mixin filter(obj)
 				.filter__select
 					header.filter__header.filter__header--select
 						span.filter__selected!= obj.title
-						svg.icon.icon--arrow
+						svg.icon.icon--arrow.icon--arrow-filter
 							use.icon__item(xlink:href='#arrow')
 					.filter__body.filter__body--select
 						ul.filter__list.filter__list--select

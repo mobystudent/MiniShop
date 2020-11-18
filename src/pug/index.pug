@@ -42,8 +42,12 @@ block content
 									+item({nameImg: 'item-2', class: 'slider', rating: '4', title: 'Платье с цветочным принтом', price: '123', status: { item: 'hit', name: 'хит продаж'}})
 									+item({nameImg: 'item-3', class: 'slider', rating: '4', title: 'Джинсовый комбинезон', price: '123'})
 								.slider__control
-									.slider__prev
+									.slider__arrow.slider__arrow--prev
+										svg.icon.icon--arrow.icon--arrow-slider
+											use.icon__item(xlink:href='#arrow')
 									.slider__dots
-									.slider__next
+									.slider__arrow.slider__arrow--next
+										svg.icon.icon--arrow.icon--arrow-slider
+											use.icon__item(xlink:href='#arrow')
 			
 		include includes/footer

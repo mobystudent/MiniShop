@@ -65,4 +65,34 @@
 	&__dots {
 		margin: 0 20px;
 	}
+
+	&__arrow {
+		cursor: pointer;
+		transition: background 0.25s ease-in-out;
+
+		&:hover {
+			background: $darkTurquoise;
+
+			.icon {
+				stroke: $lighterGray;
+			}
+		}
+
+		&--prev {
+			.icon {
+				transform: rotate(0deg);
+			}
+		}
+
+		&--next {
+			.icon {
+				transform: rotate(-180deg);
+			}
+		}
+
+		.icon {
+			position: relative;
+			z-index: 0;
+		}
+	}
 }

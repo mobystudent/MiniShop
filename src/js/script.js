@@ -40,8 +40,8 @@ function slider() {
 		easing: 'ease-in',
 		dots: true,
 		appendDots: '.slider__dots',
-		prevArrow: '.slider__prev',
-		nextArrow: '.slider__next',
+		prevArrow: '.slider__arrow--prev',
+		nextArrow: '.slider__arrow--next',
 		variableWidth: true,
 		responsive: [
 			{
