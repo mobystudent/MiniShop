@@ -10,6 +10,16 @@
 		letter-spacing: -0.05em;
 		color: $dimBlack;
 		margin-bottom: 35px;
+
+		@media screen and (max-width: 767px) {
+			font-size: 24px;
+			line-height: 32px;
+			margin-bottom: 20px;
+		}
+
+		@media screen and (max-width: 767px) {
+			text-align: center;
+		}
 	}
 
 	&__filters {
@@ -18,11 +28,44 @@
 		border: 1px solid $lightGray;
 		margin-right: 30px;
 		border-radius: 5px;
+		flex: 0 0 auto;
+
+		@media screen and (max-width: 1365px) {
+			margin-right: 20px;
+		}
+
+		@media screen and (max-width: 1023px) {
+			width: 250px;
+		}
+
+		@media screen and (max-width: 767px) {
+			width: 270px;
+			margin: 0 auto 30px;
+		}
 	}
 
 	&__body {
 		display: flex;
 		align-items: flex-start;
+
+		@media screen and (max-width: 767px) {
+			flex-flow: column;
+		}
+	}
+
+	&__content {
 		margin-right: -30px;
+
+		@media screen and (max-width: 1365px) {
+			margin-right: -20px;
+		}
+
+		@media screen and (max-width: 1023px) {
+			width: 475px;
+		}
+
+		@media screen and (max-width: 767px) {
+			width: 100%;
+		}
 	}
 }

@@ -1,5 +1,19 @@
 .img {
 	display: flex;
+	flex: 0 0 auto;
+
+	&--item {
+		height: 235px;
+		width: 100%;
+
+		@media screen and (max-width: 1365px) {
+			height: 180px;
+		}
+
+		@media screen and (max-width: 767px) {
+			height: 235px;
+		}
+	}
 
 	&--star {
 		width: 15px;
